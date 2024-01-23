@@ -1,0 +1,124 @@
+body {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(30, 54%, 90%);
+  font-family: "Outfit", sans-serif;
+  padding: 50px 0 50px 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 30px;
+  background-color: white;
+  width: 47vw;
+}
+h1 {
+  font-family: "Young Serif", serif;
+  letter-spacing: 2px;
+}
+img {
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.preparation {
+  margin-top: 10px;
+  border-radius: 15px;
+  padding: 0px 0 20px 20px;
+  background-color: hsl(330, 100%, 98%);
+  font-weight: 100;
+}
+span {
+  font-weight: bold;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+li {
+  padding-left: 17px;
+}
+
+.preptitle {
+  color: hsl(332, 51%, 32%);
+  font-size: 25px;
+  font-weight: 600;
+}
+.title {
+  font-size: 25px;
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif", serif;
+  letter-spacing: 1px;
+}
+hr {
+  margin-top: 40px;
+}
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.orderlist {
+  line-height: 1.4;
+}
+.itemstable {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.items {
+  display: flex;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+}
+.name {
+  padding-left: 20px;
+  width: 300px;
+}
+.value {
+  color: hsl(15, 15%, 10%);
+  font-weight: 700;
+}
+
+/* Media Query */
+@media screen and (max-width: 500px) {
+  body {
+    box-sizing: border-box;
+    background-color: white;
+    font-family: "Outfit", sans-serif;
+    padding: 5px;
+    /* all: unset; */
+    /* background-image: url(./assets/image-omelette.jpeg); */
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+  .name {
+    width: 100px;
+  }
+  li {
+    padding-left: 10px;
+  }
+  img {
+    border-radius: 0px;
+  }
+  .preparation {
+    padding: 5px 15px 5px 15px;
+  }
+}
